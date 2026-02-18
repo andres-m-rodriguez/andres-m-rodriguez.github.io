@@ -1,0 +1,98 @@
+.speaking-header {
+  margin-bottom: 3rem;
+}
+
+.speaking-header p {
+  max-width: 600px;
+}
+
+.talks {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.talk {
+  padding: 1.5rem;
+  background-color: var(--bg-card);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.talk:hover {
+  border-color: var(--accent);
+}
+
+.talk-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.talk-header h2 {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.talk-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.talk-host {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.talk-date {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.talk p {
+  margin-bottom: 1rem;
+}
+
+.talk-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transition: border-color 0.2s ease;
+}
+
+.talk-link:hover {
+  border-color: var(--accent);
+}
+
+.talk-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.talk-tags span {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+  .talk-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

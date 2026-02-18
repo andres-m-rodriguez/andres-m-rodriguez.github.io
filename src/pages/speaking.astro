@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/speaking.css';
+---
+
+<Base title="Talks">
+  <header class="speaking-header">
+    <h1>Talks</h1>
+    <p>Talks and presentations on software development, cloud architecture, and AI.</p>
+  </header>
+
+  <div class="talks">
+    <article class="talk">
+      <div class="talk-header">
+        <h2>Building a Scalable AI-Powered Course Platform</h2>
+      </div>
+      <div class="talk-meta">
+        <span class="talk-host">Microsoft Student Zone</span>
+        <span class="talk-date">2025</span>
+      </div>
+      <p>
+        One-hour live session demonstrating a scalable course platform similar to Coursera,
+        built with Azure Container Apps, PostgreSQL, and Azure Storage. Featured an AI-powered
+        pipeline where teachers provide a GitHub repo and background workers automatically
+        generate course content using Azure AI Foundry.
+      </p>
+      <div class="talk-tags">
+        <span>Azure Container Apps</span>
+        <span>PostgreSQL</span>
+        <span>Azure Storage</span>
+        <span>Azure AI Foundry</span>
+        <span>.NET</span>
+      </div>
+      <a href="https://youtu.be/7RnRks0Bg6k" target="_blank" rel="noopener" class="talk-link">
+        Watch on YouTube →
+      </a>
+    </article>
+  </div>
+</Base>

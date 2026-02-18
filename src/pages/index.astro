@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/home.css';
+import { Github, Linkedin, Mail } from '@lucide/astro';
+---
+
+<Base title="Home">
+  <section class="hero">
+    <div class="about-card">
+      <p>
+        I'm a software developer working in bioinformatics and public health infrastructure
+        with a passion for building things that matter. Professionally, I architect microservices
+        that process thousands of lab results for epidemiological analysis across multiple health agencies.
+      </p>
+      <p>
+        Outside of work, I contribute to open-source projects in the .NET and Blazor ecosystem
+        and love building my own tools and libraries, from messaging systems to tokenizers to
+        reactive frameworks. You can check them all out on my <a href="https://github.com/andres-m-rodriguez" target="_blank" rel="noopener">GitHub</a>.
+        I've also been featured in a <a href="/speaking">Microsoft Student Zone session</a> where I presented
+        a scalable AI-powered course platform, and I'm currently building a federally funded
+        conservation mapping tool for US wildlife agencies.
+      </p>
+      <p>
+        I'm always looking forward to the next challenge and learning something new :)
+      </p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="https://github.com/andres-m-rodriguez" target="_blank" rel="noopener" class="contact-item">
+        <Github size={20} />
+        <span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/andres-rodriguez-075266301/" target="_blank" rel="noopener" class="contact-item">
+        <Linkedin size={20} />
+        <span>LinkedIn</span>
+      </a>
+      <a href="mailto:andresm.rodriguezcan@gmail.com" class="contact-item">
+        <Mail size={20} />
+        <span>Email</span>
+      </a>
+    </div>
+  </section>
+</Base>

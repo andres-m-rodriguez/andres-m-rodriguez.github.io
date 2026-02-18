@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/projects.css';
+---
+
+<Base title="Projects">
+  <header class="projects-header">
+    <h1>Projects</h1>
+  </header>
+
+  <section class="category">
+    <h2>Systems Programming (Zig)</h2>
+
+    <article class="project">
+      <h3>Zafka</h3>
+      <p>Kafka clone implementing broker protocol, partitioned log storage, and consumer groups from scratch.</p>
+    </article>
+
+    <article class="project">
+      <h3>zigx</h3>
+      <p>Reactive web framework with compile-time dependency analysis and WebAssembly output.</p>
+    </article>
+
+    <article class="project">
+      <h3>zbpe</h3>
+      <p>BPE tokenizer covering training, merge rules, and vocabulary serialization.</p>
+    </article>
+  </section>
+
+  <section class="category">
+    <h2>AI Research</h2>
+
+    <article class="project">
+      <h3>Grigori.Rlm</h3>
+      <p>Root LLM orchestrating subtasks to local models via MCP for parallel codebase analysis.</p>
+    </article>
+
+    <article class="project">
+      <h3>Grigori</h3>
+      <p>Semantic code search platform using pgvector for embeddings and pattern detection.</p>
+    </article>
+  </section>
+
+  <section class="category">
+    <h2>Applied</h2>
+
+    <article class="project">
+      <h3>FaunaFinder</h3>
+      <p>Federally funded conservation mapping platform linking endangered wildlife to NRCS practices by municipality.</p>
+    </article>
+  </section>
+
+  <div class="all-projects">
+    <p>All projects: <a href="https://github.com/andres-m-rodriguez" target="_blank" rel="noopener">github.com/andres-m-rodriguez</a></p>
+  </div>
+</Base>

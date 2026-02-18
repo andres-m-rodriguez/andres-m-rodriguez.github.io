@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/experience.css';
+---
+
+<Base title="Experience">
+  <header class="experience-header">
+    <h1>Experience</h1>
+    <p>
+      I'm a 22-year-old software developer working in bioinformatics and public health infrastructure
+      with a passion for building things that matter. Professionally, I architect microservices that
+      process thousands of lab results for epidemiological analysis across multiple health agencies.
+    </p>
+  </header>
+
+  <section class="job">
+    <div class="job-header">
+      <h2>Bioinformatics Full Stack Developer</h2>
+      <p class="job-meta">
+        <span>Bioinformatics — Guaynabo, Puerto Rico</span> · <span class="date">04/2025 - Present</span>
+      </p>
+    </div>
+    <ul>
+      <li>Architected Bioresult, a 6-service Electronic Lab Reporting pipeline ingesting HL7/SAIL files, standardizing codes to LOINC/SNOMED, and delivering results to subscribing clients</li>
+      <li>Designed 73-entity PostgreSQL database across 13 domains with role-based authorization spanning 7 roles and 35+ API endpoint groups</li>
+      <li>Built async messaging layer using Azure Service Bus (MassTransit) and Dapr pub/sub to decouple ingestion, processing, and export stages</li>
+      <li>Implemented auto-scaling export workers (0–10 replicas) with Redis distributed locking to prevent duplicate processing</li>
+      <li>Developed Angular frontend with 50+ feature components and 20+ data access services</li>
+    </ul>
+  </section>
+
+  <section class="job">
+    <div class="job-header">
+      <h2>Programmer</h2>
+      <p class="job-meta">
+        <span>Department of Health — Guaynabo, Puerto Rico</span> · <span class="date">08/2023 - 04/2025</span>
+      </p>
+    </div>
+    <ul>
+      <li>Developed a Blazor Server vaccination management system serving 20+ internal users for Puerto Rico's Department of Health</li>
+      <li>Built real-time reporting features for island-wide vaccine inventory and distribution tracking</li>
+      <li>Implemented secure authentication with ASP.NET Core Identity, 2FA, and JWT tokens</li>
+      <li>Architected data access layer using Entity Framework Core with CQRS pattern for optimized read/write operations</li>
+      <li>Created cross-platform mobile applications using .NET MAUI for Android and iOS</li>
+      <li>Streamlined deployments using .NET Aspire to orchestrate Blazor apps, APIs, and database containers on Azure</li>
+    </ul>
+  </section>
+
+  <section class="job">
+    <div class="job-header">
+      <h2>Unity Developer</h2>
+      <p class="job-meta">
+        <span>Inter American University</span> · <span class="date">08/2023 - 12/2023</span>
+      </p>
+    </div>
+    <ul>
+      <li>Developed custom physics engines with collision detection and rigid body dynamics for real-time gameplay</li>
+      <li>Implemented spatial partitioning algorithms (BVH, octrees) for broad-phase collision performance</li>
+      <li>Built reusable physics components including raycasting systems, joint simulations, and force-based movement controllers</li>
+      <li>Profiled and optimized critical physics code for consistent 60+ FPS</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-category">
+      <strong>Languages:</strong>
+      <span>C#, C, Java, Zig, Rust, Python, TypeScript, HTML/CSS</span>
+    </div>
+    <div class="skill-category">
+      <strong>Frameworks:</strong>
+      <span>.NET 8-10, Blazor, ASP.NET Core, Entity Framework, .NET Aspire, .NET MAUI, TensorFlow, Express.js, Angular, React</span>
+    </div>
+    <div class="skill-category">
+      <strong>Data:</strong>
+      <span>PostgreSQL, Oracle, SQL Server, pgvector, Redis</span>
+    </div>
+    <div class="skill-category">
+      <strong>Infrastructure:</strong>
+      <span>Azure (App Service, Container Instances), Docker, CI/CD, Git</span>
+    </div>
+  </section>
+</Base>

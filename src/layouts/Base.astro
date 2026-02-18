@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+import '../styles/layout.css';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Andres Rodriguez - Software developer building across the stack" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | Andres Rodriguez</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="/" class="nav-logo">Andres Rodriguez</a>
+        <ul class="nav-links">
+          <li><a href="/" class:list={[{ active: currentPath === '/' }]}>Home</a></li>
+          <li><a href="/projects" class:list={[{ active: currentPath === '/projects' }]}>Projects</a></li>
+          <li><a href="/speaking" class:list={[{ active: currentPath === '/speaking' }]}>Talks</a></li>
+          <li><a href="/experience" class:list={[{ active: currentPath === '/experience' }]}>Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>&copy; {new Date().getFullYear()} Andres Rodriguez</p>
+    </footer>
+  </body>
+</html>

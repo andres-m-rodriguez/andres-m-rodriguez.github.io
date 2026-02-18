@@ -1,0 +1,105 @@
+.projects-header {
+  margin-bottom: 3rem;
+}
+
+.category {
+  margin-bottom: 3rem;
+}
+
+.category h2 {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.project {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+}
+
+.project:hover {
+  border-left-color: var(--accent);
+}
+
+.project h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.project p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.project-featured {
+  padding: 1.25rem;
+  padding-left: 1.25rem;
+  background-color: var(--bg-card);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-header h3 {
+  margin-bottom: 0;
+}
+
+.project-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.badge.proprietary {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tags span {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+.all-projects {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.all-projects p {
+  font-size: 0.9rem;
+}

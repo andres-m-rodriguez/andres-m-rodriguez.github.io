@@ -1,0 +1,97 @@
+.experience-header {
+  margin-bottom: 3rem;
+}
+
+.job {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.job:last-of-type {
+  border-bottom: none;
+}
+
+.job-header {
+  margin-bottom: 1rem;
+}
+
+.job-header h2 {
+  margin-bottom: 0.25rem;
+}
+
+.job-meta {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.job-meta span {
+  display: inline;
+}
+
+.job-meta .date {
+  color: var(--accent);
+}
+
+.job ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.job li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.job li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--border);
+}
+
+.highlight {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.highlight h2 {
+  margin-bottom: 0.75rem;
+}
+
+.highlight p {
+  margin-bottom: 0.75rem;
+}
+
+.highlight p:last-child {
+  margin-bottom: 0;
+}
+
+.skills {
+  margin-top: 3rem;
+}
+
+.skills h2 {
+  margin-bottom: 1.5rem;
+}
+
+.skill-category {
+  margin-bottom: 1rem;
+}
+
+.skill-category strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.skill-category span {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
